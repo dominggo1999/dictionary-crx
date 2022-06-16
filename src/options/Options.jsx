@@ -10,7 +10,11 @@ const App = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    changeWord(pathname.replace('/', ''));
+    const targetWord = pathname.replace('/', '');
+    if (targetWord) {
+      changeWord(targetWord);
+      document.title = `Dictionary | ${targetWord.toLowerCase().trim()}`;
+    }
   }, [pathname]);
 
   return (
