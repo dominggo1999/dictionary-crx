@@ -7,6 +7,10 @@
     "service_worker": "src/background/background.js",
     "type": "module"
   },
+  "icons": {
+    "16": "ext-icons/icon-512.png",
+    "48": "ext-icons/icon-512.png"
+  },
   "host_permissions": [
     "https://www.wordhippo.com/",
     "https://www.vocabulary.com/",
