@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Complete Dictionary",
+  "version": "1.0.0",
+  "options_page": "src/options/index.html",
+  "background": {
+    "service_worker": "src/background/background.js",
+    "type": "module"
+  },
+  "host_permissions": [
+    "https://www.wordhippo.com/",
+    "https://www.vocabulary.com/",
+    "https://translate.googleapis.com/",
+    "https://inter.youdao.com/",
+    "https://www.powerthesaurus.org/"
+  ]
+}
