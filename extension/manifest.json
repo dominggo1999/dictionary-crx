@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "options_page": "src/options/index.html",
   "background": {
-    "service_worker": "src/background/background.js",
+    "service_worker": "service-worker-loader.js",
     "type": "module"
   },
   "host_permissions": [
@@ -16,12 +16,13 @@
   ],
   "web_accessible_resources": [
     {
+      "matches": [
+        "<all_urls>"
+      ],
       "resources": [
         "src/options/index.html"
       ],
-      "matches": [
-        "<all_urls>"
-      ]
+      "use_dynamic_url": false
     }
   ]
 }
